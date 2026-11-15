@@ -14,18 +14,36 @@ player makes every GPU call, so it needs no permissions.
 
 ## Install
 
-You need Popamp Plus 0.7.0 or newer, or any build with visualizers
-(`cargo build --release --features visualizers`). Clone it into Popamp's
-plug-ins folder:
+You need Popamp Plus, or any build with visualizers
+(`cargo build --release --features visualizers`).
+
+**From the Gallery** (Popamp 0.8.0 or newer, Linux and Windows): in
+Popamp open Options > Gallery, find Lotus Bloom and install it. Updates
+come the same way.
+
+**As a package** (Popamp 0.7.0 or newer, Linux), from
+[apt.popamp.app](https://apt.popamp.app) on Debian and Ubuntu or from the
+[openSUSE and Fedora repository](https://github.com/popamp/popamp/blob/main/docs/building.md#opensuse-and-fedora):
+
+```sh
+sudo apt install popamp-plugin-lotus      # Debian, Ubuntu
+sudo zypper install popamp-plugin-lotus   # openSUSE
+sudo dnf install popamp-plugin-lotus      # Fedora
+```
+
+**From this repository**: clone it into Popamp's plug-ins folder, where
+a copy of the same name wins over the package:
 
 ```sh
 git clone https://github.com/popamp/plugin-lotus ~/.local/share/popamp/plugins/lotus
 ```
 
-The folder must be called `lotus`, the plug-in's id. Then in Popamp:
-Options > Plug-ins…, tick Lotus Bloom and press OK. It opens from the
-Visualization menu. F toggles full screen, Esc leaves it or closes the
-window.
+The folder must be called `lotus`, the plug-in's id; updating is
+`git pull` there.
+
+However it came, turn it on in Options > Plug-ins…: tick Lotus Bloom
+and press OK. It opens from the Visualization menu. F toggles full
+screen, Esc leaves it or closes the window.
 
 ## Build
 
