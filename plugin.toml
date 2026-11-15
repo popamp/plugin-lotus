@@ -1,0 +1,6 @@
+id = "lotus"
+name = "Lotus Bloom"
+version = "1.0.0"
+api = "1.0"
+kind = "visual"
+description = "A many-petalled flower whose rings of petals swell and shrink with the music: the outer ones with the bass, the inner ones with the treble."
